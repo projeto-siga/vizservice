@@ -1,4 +1,4 @@
-package br.com.caelum.vraptor.controller;
+package br.jus.trf2.jf.segsap;
 
 import java.io.IOException;
 
