@@ -20,7 +20,6 @@ public class JFRJGraphViz {
 	public static byte[] generateGraph(String dotFormatGraph) throws IOException {
         Runtime rt = Runtime.getRuntime();
 
-        //converte para svg (siga usa esse formato) e joga para stdout o dotgraph passado em stdin
         String[] dotArgs = isWindows() ? DOT_COMMAND_WINDOWS : DOT_COMMAND_LINUX;
 
         Process p = rt.exec(dotArgs);
@@ -43,10 +42,6 @@ public class JFRJGraphViz {
 		}
         
         return bytes;
-	}
-	
-	public static void main(String[] args) {
-		System.out.println(isWindows());
 	}
 	
 	private static boolean isWindows() {
