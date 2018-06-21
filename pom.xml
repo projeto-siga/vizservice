@@ -69,7 +69,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>br.jus.trf2.jf</finalName>
+		<finalName>vizservice</finalName>
 		<outputDirectory>src/main/webapp/WEB-INF/classes</outputDirectory>
 		<plugins>
 			<plugin>
