@@ -2,8 +2,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.jus.trf2.jf</groupId>
-	<artifactId>jfrjvizservice</artifactId>
-	<version>1.0.0</version>
+	<artifactId>vizservice</artifactId>
+	<version>1.1.0</version>
 	<packaging>war</packaging>
 
 	<description>A blank project to start using VRaptor 4</description>
