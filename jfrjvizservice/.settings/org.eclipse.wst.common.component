@@ -5,6 +5,6 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <property name="java-output-path" value="/your-artifactid/src/main/webapp/WEB-INF/classes"/>
-        <property name="context-root" value="jfrjvizservice"/>
+        <property name="context-root" value="br.jus.trf2.jf"/>
     </wb-module>
 </project-modules>

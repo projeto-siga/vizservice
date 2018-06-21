@@ -10,12 +10,13 @@ import org.apache.commons.io.IOUtils;
 
 public class JFRJGraphViz {
 	private static final String[] DOT_COMMAND_LINUX = {"/usr/bin/dot", "-Tsvg"};
+	private static final String[] DOT_COMMAND_MAC = {"/opt/local/bin/dot", "-Tsvg"};
 	private static final String[] DOT_COMMAND_WINDOWS = {"C:/Program Files (x86)/Graphviz2.38/bin/dot.exe", "-Tsvg"};
 
 	public static byte[] generateGraph(String dotFormatGraph) throws IOException {
         Runtime rt = Runtime.getRuntime();
 
-        String[] dotArgs = isWindows() ? DOT_COMMAND_WINDOWS : DOT_COMMAND_LINUX;
+        String[] dotArgs = isWindows() ? DOT_COMMAND_WINDOWS : isMac() ? DOT_COMMAND_MAC : DOT_COMMAND_LINUX;
 
         Process p = rt.exec(dotArgs);
 
@@ -41,5 +42,9 @@ public class JFRJGraphViz {
 	
 	private static boolean isWindows() {
 		return System.getProperty("os.name").contains("Windows");
+	}
+
+	private static boolean isMac() {
+		return System.getProperty("os.name").contains("Mac");
 	}
 }
