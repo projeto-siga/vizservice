@@ -24,3 +24,5 @@ curl -X POST \
 ```
 
 A chamada ao VizService segue exatamente o mesmo contrato que o container Docker [omerio/graphviz-server](https://hub.docker.com/r/omerio/graphviz-server/), portanto, uma instalação do Projeto-Siga baseada em containers do Docker não precisará usar o VizServer, poderá simplesmente substituir esse artefato pelo graphviz-server.
+
+Um site online para montar o gráfico a partir da estrutura montada - https://www.devtoolsdaily.com/graphviz/?#v2=N4IgJg9gLiBcIgL5A
